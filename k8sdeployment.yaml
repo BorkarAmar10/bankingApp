@@ -21,7 +21,7 @@ spec:
         - name: bankapp-agb-container
           image: borkaramar10/banking_app:latest
           ports:
-            - containerPort: 8084
+            - containerPort: 8087
 
 # Define a Service to expose your app internally within the cluster
 apiVersion: v1
@@ -37,5 +37,5 @@ spec:
   type: NodePort
   ports:
     - nodePort: 31002
-      port: 8084
-      targetPort: 8084
+      port: 8087
+      targetPort: 8087
